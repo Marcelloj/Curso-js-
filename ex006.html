@@ -16,12 +16,21 @@
     <h1>Iniciando os estudos DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em Javacript.</p>
-    <div>Clique em mim!</div>
+    <div id="msg">Clique em mim!</div>
     <script>
       var corpo = document.body;
+
       var p1 = document.getElementsByTagName("p")[0];
+
       corpo.style.background = "black";
       p1.style.color = "red";
+
+      var d = document.getElementById("msg");
+      // d.style.background = "green";
+      d.innerText = " Estou aguardando";
+
+      var d = document.querySelector("div#msg");
+      d.style.background = "blue";
     </script>
   </body>
 </html>
